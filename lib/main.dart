@@ -26,7 +26,7 @@ class _HomeState extends State<Home> {
 
   Future getWeather() async {
     http.Response response = await http.get(Uri.parse(
-        "https://api.openweathermap.org/data/2.5/weather?q=kochi&units=metric&appid=5cf9ddd7f48d713ce871844cd7378acf"));
+        "https://api.openweathermap.org/data/2.5/weather?q=chennai&units=metric&appid=5cf9ddd7f48d713ce871844cd7378acf"));
 
     var results = jsonDecode(response.body);
     setState(() {
